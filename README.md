@@ -1,0 +1,2 @@
+# KanScaffold
+Scaffold of Java
