@@ -1,5 +1,5 @@
-test:
-	docker buildx build --target test .
+install:
+	make -j2 -C kan-scaffold-parent install
 
-build:
-	docker buildx build --target build --tag kan-scaffold:0.0.1 .
+test:
+	make -j2 -C kan-scaffold-boot test
