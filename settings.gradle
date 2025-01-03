@@ -1,0 +1,9 @@
+rootProject.name = 'KanScaffold'
+
+include 'kan-scaffold-boot'
+include "kan-scaffold-boot-parent"
+include "kan-scaffold-dependencies"
+
+file("${rootDir}/kan-scaffold-boot-starters").eachDirMatch(~/kan-scaffold-boot-starter.*/) {
+	include "kan-scaffold-boot-starters:${it.name}"
+}
